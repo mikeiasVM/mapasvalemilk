@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_17f49da0c2211a98adacf1a6f6a10b51 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_17f49da0c2211a98adacf1a6f6a10b51" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_17f49da0c2211a98adacf1a6f6a10b51 = L.map(
+                "map_17f49da0c2211a98adacf1a6f6a10b51",
+                {
+                    center: [-3.75, -38.6],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5e426c0783a5fcd1099d03e2a09c5045 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5e426c0783a5fcd1099d03e2a09c5045.addTo(map_17f49da0c2211a98adacf1a6f6a10b51);
+        
+    
+            var feature_group_260c75e7c23527339d7b6d80fcdddb7f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_260c75e7c23527339d7b6d80fcdddb7f.addTo(map_17f49da0c2211a98adacf1a6f6a10b51);
+        
+    
+            var feature_group_sub_group_3d6ddfe412fe5926980c09c74db1b86a = L.featureGroup.subGroup(
+                feature_group_260c75e7c23527339d7b6d80fcdddb7f
+            );
+        
+    
+            var circle_marker_d1221e2aa8ad7f03762e8edd4c8b16b6 = L.circleMarker(
+                [-3.7572537, -38.5854697],
+                {"bubblingMouseEvents": true, "color": "#05e6d5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#05e6d5", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_3d6ddfe412fe5926980c09c74db1b86a);
+        
+    
+        var popup_465ed26c90eade196ac7a47a18b9d145 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b87d49a11d6dee17445375ad9add0456 = $(`<div id="html_b87d49a11d6dee17445375ad9add0456" style="width: 100.0%; height: 100.0%;"><b>nan</b><br>nan</div>`)[0];
+                popup_465ed26c90eade196ac7a47a18b9d145.setContent(html_b87d49a11d6dee17445375ad9add0456);
+            
+        
+
+        circle_marker_d1221e2aa8ad7f03762e8edd4c8b16b6.bindPopup(popup_465ed26c90eade196ac7a47a18b9d145)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_3d6ddfe412fe5926980c09c74db1b86a.addTo(map_17f49da0c2211a98adacf1a6f6a10b51);
+        
+    
+            var feature_group_sub_group_e5eeccfc6b67f301f9c4e7747ba22686 = L.featureGroup.subGroup(
+                feature_group_260c75e7c23527339d7b6d80fcdddb7f
+            );
+        
+    
+            var circle_marker_0700354ad1b9e6ac2b5944420be198fa = L.circleMarker(
+                [-3.7680525, -38.5155799],
+                {"bubblingMouseEvents": true, "color": "#c4cfa9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c4cfa9", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_e5eeccfc6b67f301f9c4e7747ba22686);
+        
+    
+        var popup_c732e6617005b407c03ed8afc32f5148 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e45d3ea03d0b0f5522d53cd125e90bd1 = $(`<div id="html_e45d3ea03d0b0f5522d53cd125e90bd1" style="width: 100.0%; height: 100.0%;"><b>LINDERBOX SUPERMERCADO</b><br>R$ 838,19</div>`)[0];
+                popup_c732e6617005b407c03ed8afc32f5148.setContent(html_e45d3ea03d0b0f5522d53cd125e90bd1);
+            
+        
+
+        circle_marker_0700354ad1b9e6ac2b5944420be198fa.bindPopup(popup_c732e6617005b407c03ed8afc32f5148)
+        ;
+
+        
+    
+    
+            var circle_marker_ffa9d7458ce4c76dc7b1ba9090120c19 = L.circleMarker(
+                [-3.8460405, -38.5168928],
+                {"bubblingMouseEvents": true, "color": "#c4cfa9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c4cfa9", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_e5eeccfc6b67f301f9c4e7747ba22686);
+        
+    
+        var popup_0047292f7ddc1c094eb69dbfdb685361 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbe53bd84398ab9198f399b60b46e629 = $(`<div id="html_cbe53bd84398ab9198f399b60b46e629" style="width: 100.0%; height: 100.0%;"><b>SUPERMERCADO IRMAO GEMEOS - LJ 02</b><br>R$ 391,00</div>`)[0];
+                popup_0047292f7ddc1c094eb69dbfdb685361.setContent(html_cbe53bd84398ab9198f399b60b46e629);
+            
+        
+
+        circle_marker_ffa9d7458ce4c76dc7b1ba9090120c19.bindPopup(popup_0047292f7ddc1c094eb69dbfdb685361)
+        ;
+
+        
+    
+    
+            var circle_marker_c3b60cd3294b86f58ac026b9d9fb9691 = L.circleMarker(
+                [-3.8503818, -38.5219096],
+                {"bubblingMouseEvents": true, "color": "#c4cfa9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c4cfa9", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_e5eeccfc6b67f301f9c4e7747ba22686);
+        
+    
+        var popup_45301aabe6f055455c0e7de903154c52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a5ceba9fb027fb5b58eb13ff8bc4ac5 = $(`<div id="html_7a5ceba9fb027fb5b58eb13ff8bc4ac5" style="width: 100.0%; height: 100.0%;"><b>SUPER PALMEIRAS</b><br>R$ 203,10</div>`)[0];
+                popup_45301aabe6f055455c0e7de903154c52.setContent(html_7a5ceba9fb027fb5b58eb13ff8bc4ac5);
+            
+        
+
+        circle_marker_c3b60cd3294b86f58ac026b9d9fb9691.bindPopup(popup_45301aabe6f055455c0e7de903154c52)
+        ;
+
+        
+    
+    
+            var circle_marker_fd772ddf5cd62c99b25a14862953e5c2 = L.circleMarker(
+                [-3.8471524, -38.5283154],
+                {"bubblingMouseEvents": true, "color": "#c4cfa9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c4cfa9", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_e5eeccfc6b67f301f9c4e7747ba22686);
+        
+    
+        var popup_5b0d174b39b0ba2298a40f021f14cf8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a366c83f43267b013dd0c2c6a6fb4e4 = $(`<div id="html_9a366c83f43267b013dd0c2c6a6fb4e4" style="width: 100.0%; height: 100.0%;"><b>OFERTASSO - CONJ PALMEIRAS</b><br>R$ 318,33</div>`)[0];
+                popup_5b0d174b39b0ba2298a40f021f14cf8d.setContent(html_9a366c83f43267b013dd0c2c6a6fb4e4);
+            
+        
+
+        circle_marker_fd772ddf5cd62c99b25a14862953e5c2.bindPopup(popup_5b0d174b39b0ba2298a40f021f14cf8d)
+        ;
+
+        
+    
+    
+            var circle_marker_bb3d3024c15987c75bffcd8998a83aa4 = L.circleMarker(
+                [-3.8608573, -38.4936361],
+                {"bubblingMouseEvents": true, "color": "#c4cfa9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c4cfa9", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_e5eeccfc6b67f301f9c4e7747ba22686);
+        
+    
+        var popup_07384976723ecf4fda0576b3afe4d6a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e733bea61bdf6e26c28dfa31bd8489e7 = $(`<div id="html_e733bea61bdf6e26c28dfa31bd8489e7" style="width: 100.0%; height: 100.0%;"><b>MERCADINHO SUPER ITAMARATY</b><br>R$ 203,40</div>`)[0];
+                popup_07384976723ecf4fda0576b3afe4d6a7.setContent(html_e733bea61bdf6e26c28dfa31bd8489e7);
+            
+        
+
+        circle_marker_bb3d3024c15987c75bffcd8998a83aa4.bindPopup(popup_07384976723ecf4fda0576b3afe4d6a7)
+        ;
+
+        
+    
+    
+            var circle_marker_877215b149500edd3496244a096ae613 = L.circleMarker(
+                [-3.8383087, -38.4875814],
+                {"bubblingMouseEvents": true, "color": "#c4cfa9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c4cfa9", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_e5eeccfc6b67f301f9c4e7747ba22686);
+        
+    
+        var popup_ddc73ec078848825b633f61e219c8bed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f3ef2ce2d9518a0c13bd7c02be63b39 = $(`<div id="html_9f3ef2ce2d9518a0c13bd7c02be63b39" style="width: 100.0%; height: 100.0%;"><b>R CENTER - PAUPINA</b><br>R$ 4.208,16</div>`)[0];
+                popup_ddc73ec078848825b633f61e219c8bed.setContent(html_9f3ef2ce2d9518a0c13bd7c02be63b39);
+            
+        
+
+        circle_marker_877215b149500edd3496244a096ae613.bindPopup(popup_ddc73ec078848825b633f61e219c8bed)
+        ;
+
+        
+    
+    
+            var circle_marker_ae17b4303dd107f371f1a05a5d1a7dc7 = L.circleMarker(
+                [-3.8470901, -38.5219658],
+                {"bubblingMouseEvents": true, "color": "#c4cfa9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c4cfa9", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_e5eeccfc6b67f301f9c4e7747ba22686);
+        
+    
+        var popup_d0af00338b841433326ade0e0810d129 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea494c2305c796adc5f0df8ceeea72a8 = $(`<div id="html_ea494c2305c796adc5f0df8ceeea72a8" style="width: 100.0%; height: 100.0%;"><b>SUPERMERCADO MAIS COMPRAS - LOJA 01</b><br>R$ 404,99</div>`)[0];
+                popup_d0af00338b841433326ade0e0810d129.setContent(html_ea494c2305c796adc5f0df8ceeea72a8);
+            
+        
+
+        circle_marker_ae17b4303dd107f371f1a05a5d1a7dc7.bindPopup(popup_d0af00338b841433326ade0e0810d129)
+        ;
+
+        
+    
+    
+            var poly_line_1911601d370a5b7726f67858135695e6 = L.polyline(
+                [[-3.7572537, -38.5854697], [-3.7680525, -38.5155799], [-3.8383087, -38.4875814], [-3.8608573, -38.4936361], [-3.8460405, -38.5168928], [-3.8470901, -38.5219658], [-3.8503818, -38.5219096], [-3.8471524, -38.5283154]],
+                {"bubblingMouseEvents": true, "color": "#c4cfa9", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#c4cfa9", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_sub_group_e5eeccfc6b67f301f9c4e7747ba22686);
+        
+    
+            poly_line_1911601d370a5b7726f67858135695e6.bindTooltip(
+                `<div>
+                     Rota de AILTON
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_sub_group_e5eeccfc6b67f301f9c4e7747ba22686.addTo(map_17f49da0c2211a98adacf1a6f6a10b51);
+        
+    
+            var feature_group_sub_group_e790bfb094f3cb8c89ce00a0f6b96d33 = L.featureGroup.subGroup(
+                feature_group_260c75e7c23527339d7b6d80fcdddb7f
+            );
+        
+    
+            var circle_marker_04cf8b22a9bcc705614b3c6df3e4c400 = L.circleMarker(
+                [-3.7567723, -38.5849554],
+                {"bubblingMouseEvents": true, "color": "#9fe522", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9fe522", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_e790bfb094f3cb8c89ce00a0f6b96d33);
+        
+    
+        var popup_a18cda9eedd7e877b6b5e14d7e64877e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d4ffaab2afe22153ccd9c263ae42c81 = $(`<div id="html_9d4ffaab2afe22153ccd9c263ae42c81" style="width: 100.0%; height: 100.0%;"><b>PANIFICADORA LETICIA</b><br>R$ 189,20</div>`)[0];
+                popup_a18cda9eedd7e877b6b5e14d7e64877e.setContent(html_9d4ffaab2afe22153ccd9c263ae42c81);
+            
+        
+
+        circle_marker_04cf8b22a9bcc705614b3c6df3e4c400.bindPopup(popup_a18cda9eedd7e877b6b5e14d7e64877e)
+        ;
+
+        
+    
+    
+            var circle_marker_fb3a8d51e3a7321c390b4e69aece77c2 = L.circleMarker(
+                [-3.8111907, -38.6087513],
+                {"bubblingMouseEvents": true, "color": "#9fe522", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9fe522", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_e790bfb094f3cb8c89ce00a0f6b96d33);
+        
+    
+        var popup_48df37871ac7e1b9c4aacb359228e12c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8764b82041fcab433df6d9b680dc5886 = $(`<div id="html_8764b82041fcab433df6d9b680dc5886" style="width: 100.0%; height: 100.0%;"><b>COMETA (OSORIO DE PAIVA)</b><br>R$ 932,47</div>`)[0];
+                popup_48df37871ac7e1b9c4aacb359228e12c.setContent(html_8764b82041fcab433df6d9b680dc5886);
+            
+        
+
+        circle_marker_fb3a8d51e3a7321c390b4e69aece77c2.bindPopup(popup_48df37871ac7e1b9c4aacb359228e12c)
+        ;
+
+        
+    
+    
+            var circle_marker_3792a8d3f346613f9aa67ee3b3c75b12 = L.circleMarker(
+                [-3.815584, -38.612772],
+                {"bubblingMouseEvents": true, "color": "#9fe522", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9fe522", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_e790bfb094f3cb8c89ce00a0f6b96d33);
+        
+    
+        var popup_085dbb4c03ef4349448841601fb06641 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d77f6c2e470070d9f8059600ab53e8e = $(`<div id="html_2d77f6c2e470070d9f8059600ab53e8e" style="width: 100.0%; height: 100.0%;"><b>BARATAO - SIQUEIRA</b><br>R$ 1.456,04</div>`)[0];
+                popup_085dbb4c03ef4349448841601fb06641.setContent(html_2d77f6c2e470070d9f8059600ab53e8e);
+            
+        
+
+        circle_marker_3792a8d3f346613f9aa67ee3b3c75b12.bindPopup(popup_085dbb4c03ef4349448841601fb06641)
+        ;
+
+        
+    
+    
+            var circle_marker_4264dca5fe221d654f318670fccb10ab = L.circleMarker(
+                [-3.7605694, -38.5306391],
+                {"bubblingMouseEvents": true, "color": "#9fe522", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9fe522", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_e790bfb094f3cb8c89ce00a0f6b96d33);
+        
+    
+        var popup_fe87020b9daffa6d503ec24a005cf664 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98eb9c3c8302dc13d5a0a512f70d544f = $(`<div id="html_98eb9c3c8302dc13d5a0a512f70d544f" style="width: 100.0%; height: 100.0%;"><b>OFERTASSO - VILA UNIAO</b><br>R$ 275,60</div>`)[0];
+                popup_fe87020b9daffa6d503ec24a005cf664.setContent(html_98eb9c3c8302dc13d5a0a512f70d544f);
+            
+        
+
+        circle_marker_4264dca5fe221d654f318670fccb10ab.bindPopup(popup_fe87020b9daffa6d503ec24a005cf664)
+        ;
+
+        
+    
+    
+            var circle_marker_1a8e9948d65259bd98ec8dd3f6634b37 = L.circleMarker(
+                [-3.7452177, -38.5401106],
+                {"bubblingMouseEvents": true, "color": "#9fe522", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9fe522", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_e790bfb094f3cb8c89ce00a0f6b96d33);
+        
+    
+        var popup_c374147311dd3f8532ef8b51730143a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9851aaa79072bced9154ab445da5afa1 = $(`<div id="html_9851aaa79072bced9154ab445da5afa1" style="width: 100.0%; height: 100.0%;"><b>SUPER GENTILANDIA - BENFICA</b><br>R$ 553,20</div>`)[0];
+                popup_c374147311dd3f8532ef8b51730143a1.setContent(html_9851aaa79072bced9154ab445da5afa1);
+            
+        
+
+        circle_marker_1a8e9948d65259bd98ec8dd3f6634b37.bindPopup(popup_c374147311dd3f8532ef8b51730143a1)
+        ;
+
+        
+    
+    
+            var poly_line_c0fd5046aaa6102e21b6c1f308afa144 = L.polyline(
+                [[-3.7572537, -38.5854697], [-3.7567723, -38.5849554], [-3.7452177, -38.5401106], [-3.7605694, -38.5306391], [-3.8111907, -38.6087513], [-3.815584, -38.612772]],
+                {"bubblingMouseEvents": true, "color": "#9fe522", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#9fe522", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_sub_group_e790bfb094f3cb8c89ce00a0f6b96d33);
+        
+    
+            poly_line_c0fd5046aaa6102e21b6c1f308afa144.bindTooltip(
+                `<div>
+                     Rota de LUAN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_sub_group_e790bfb094f3cb8c89ce00a0f6b96d33.addTo(map_17f49da0c2211a98adacf1a6f6a10b51);
+        
+    
+            var feature_group_sub_group_7f6ffd691ec07121dbb59cf806fa54a7 = L.featureGroup.subGroup(
+                feature_group_260c75e7c23527339d7b6d80fcdddb7f
+            );
+        
+    
+            var circle_marker_44018c96f2c364f1a12762cbe1c89488 = L.circleMarker(
+                [-3.7498338, -38.5846885],
+                {"bubblingMouseEvents": true, "color": "#686d9b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#686d9b", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_7f6ffd691ec07121dbb59cf806fa54a7);
+        
+    
+        var popup_3ae734a18f2f503b163796bedf961be3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_449560b65488ed9a2fb8958775d3172b = $(`<div id="html_449560b65488ed9a2fb8958775d3172b" style="width: 100.0%; height: 100.0%;"><b>COMETA (MATOS DOURADO)</b><br>R$ 7.658,53</div>`)[0];
+                popup_3ae734a18f2f503b163796bedf961be3.setContent(html_449560b65488ed9a2fb8958775d3172b);
+            
+        
+
+        circle_marker_44018c96f2c364f1a12762cbe1c89488.bindPopup(popup_3ae734a18f2f503b163796bedf961be3)
+        ;
+
+        
+    
+    
+            var circle_marker_54c0345b0a72f1edf98bda61ecd1d43c = L.circleMarker(
+                [-3.77305558, -38.57358276],
+                {"bubblingMouseEvents": true, "color": "#686d9b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#686d9b", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_7f6ffd691ec07121dbb59cf806fa54a7);
+        
+    
+        var popup_9cf6c83e609260b8cda3c884703e9fa2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_165b1991b9cec2db7db23f744d9f4062 = $(`<div id="html_165b1991b9cec2db7db23f744d9f4062" style="width: 100.0%; height: 100.0%;"><b>COMETA (JOAO XXIII)</b><br>R$ 3.162,75</div>`)[0];
+                popup_9cf6c83e609260b8cda3c884703e9fa2.setContent(html_165b1991b9cec2db7db23f744d9f4062);
+            
+        
+
+        circle_marker_54c0345b0a72f1edf98bda61ecd1d43c.bindPopup(popup_9cf6c83e609260b8cda3c884703e9fa2)
+        ;
+
+        
+    
+    
+            var poly_line_4be7073b34ca7e8ab29d79966596c30d = L.polyline(
+                [[-3.7572537, -38.5854697], [-3.7498338, -38.5846885], [-3.77305558, -38.57358276]],
+                {"bubblingMouseEvents": true, "color": "#686d9b", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#686d9b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_sub_group_7f6ffd691ec07121dbb59cf806fa54a7);
+        
+    
+            poly_line_4be7073b34ca7e8ab29d79966596c30d.bindTooltip(
+                `<div>
+                     Rota de FELIX -2ª ROTA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_sub_group_7f6ffd691ec07121dbb59cf806fa54a7.addTo(map_17f49da0c2211a98adacf1a6f6a10b51);
+        
+    
+            var feature_group_sub_group_43272d0643eecdd541aad711ec59cc9d = L.featureGroup.subGroup(
+                feature_group_260c75e7c23527339d7b6d80fcdddb7f
+            );
+        
+    
+            var circle_marker_ef444aa4cddf5751b0efc72efcc39aca = L.circleMarker(
+                [-3.8298369, -38.5802565],
+                {"bubblingMouseEvents": true, "color": "#b67a4a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b67a4a", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_43272d0643eecdd541aad711ec59cc9d);
+        
+    
+        var popup_6a05a5165e46c30f8b6c82d8d599e373 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3be42d2eb60c7fd9d71252280bb84949 = $(`<div id="html_3be42d2eb60c7fd9d71252280bb84949" style="width: 100.0%; height: 100.0%;"><b>COMPREMAX - GODOFREDO</b><br>R$ 1.334,00</div>`)[0];
+                popup_6a05a5165e46c30f8b6c82d8d599e373.setContent(html_3be42d2eb60c7fd9d71252280bb84949);
+            
+        
+
+        circle_marker_ef444aa4cddf5751b0efc72efcc39aca.bindPopup(popup_6a05a5165e46c30f8b6c82d8d599e373)
+        ;
+
+        
+    
+    
+            var circle_marker_108cd19333b78fa39e0c6ef5165a221e = L.circleMarker(
+                [-3.8119541, -38.5972122],
+                {"bubblingMouseEvents": true, "color": "#b67a4a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b67a4a", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_43272d0643eecdd541aad711ec59cc9d);
+        
+    
+        var popup_ef59ee43e0a74264e5009b2d0265c0e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f29249dd01e1ea1149572f65ad68805 = $(`<div id="html_4f29249dd01e1ea1149572f65ad68805" style="width: 100.0%; height: 100.0%;"><b>R CENTER - PRQ SANTA ROSA</b><br>R$ 1.951,34</div>`)[0];
+                popup_ef59ee43e0a74264e5009b2d0265c0e1.setContent(html_4f29249dd01e1ea1149572f65ad68805);
+            
+        
+
+        circle_marker_108cd19333b78fa39e0c6ef5165a221e.bindPopup(popup_ef59ee43e0a74264e5009b2d0265c0e1)
+        ;
+
+        
+    
+    
+            var circle_marker_35504126e676733b2bb3c77886634d0f = L.circleMarker(
+                [-3.817788, -38.589921],
+                {"bubblingMouseEvents": true, "color": "#b67a4a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b67a4a", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_43272d0643eecdd541aad711ec59cc9d);
+        
+    
+        var popup_892fc21d369ff5fcf593f8e23a855f47 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5423f512be9eb9acfa4673da4d2a80bb = $(`<div id="html_5423f512be9eb9acfa4673da4d2a80bb" style="width: 100.0%; height: 100.0%;"><b>BARATAO - CONJ ESPERANÇA</b><br>R$ 2.870,13</div>`)[0];
+                popup_892fc21d369ff5fcf593f8e23a855f47.setContent(html_5423f512be9eb9acfa4673da4d2a80bb);
+            
+        
+
+        circle_marker_35504126e676733b2bb3c77886634d0f.bindPopup(popup_892fc21d369ff5fcf593f8e23a855f47)
+        ;
+
+        
+    
+    
+            var circle_marker_25a9d633c4bc5e9d8909074cd8197cf9 = L.circleMarker(
+                [-3.8335465, -38.5527048],
+                {"bubblingMouseEvents": true, "color": "#b67a4a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b67a4a", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_43272d0643eecdd541aad711ec59cc9d);
+        
+    
+        var popup_6e9a52fced79590347a424920139ce92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3c36aadc60886b823024641e871af68 = $(`<div id="html_a3c36aadc60886b823024641e871af68" style="width: 100.0%; height: 100.0%;"><b>OFERTASSO - JOSE WALTER</b><br>R$ 819,90</div>`)[0];
+                popup_6e9a52fced79590347a424920139ce92.setContent(html_a3c36aadc60886b823024641e871af68);
+            
+        
+
+        circle_marker_25a9d633c4bc5e9d8909074cd8197cf9.bindPopup(popup_6e9a52fced79590347a424920139ce92)
+        ;
+
+        
+    
+    
+            var poly_line_6257eee3925b4952e60c3451d04a18c7 = L.polyline(
+                [[-3.7572537, -38.5854697], [-3.8119541, -38.5972122], [-3.817788, -38.589921], [-3.8298369, -38.5802565], [-3.8335465, -38.5527048]],
+                {"bubblingMouseEvents": true, "color": "#b67a4a", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#b67a4a", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_sub_group_43272d0643eecdd541aad711ec59cc9d);
+        
+    
+            poly_line_6257eee3925b4952e60c3451d04a18c7.bindTooltip(
+                `<div>
+                     Rota de ROBERTO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_sub_group_43272d0643eecdd541aad711ec59cc9d.addTo(map_17f49da0c2211a98adacf1a6f6a10b51);
+        
+    
+            var feature_group_sub_group_f64b835bae3224fcf273c2e9830b6695 = L.featureGroup.subGroup(
+                feature_group_260c75e7c23527339d7b6d80fcdddb7f
+            );
+        
+    
+            var circle_marker_6ff821e63c02c46284c86953be44c2e4 = L.circleMarker(
+                [-3.706231, -38.5746142],
+                {"bubblingMouseEvents": true, "color": "#341a9f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#341a9f", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_f64b835bae3224fcf273c2e9830b6695);
+        
+    
+        var popup_fa09525f7285a5d484e625a19f1d96b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85e2e60bde4616146b262e268492908b = $(`<div id="html_85e2e60bde4616146b262e268492908b" style="width: 100.0%; height: 100.0%;"><b>CANTINHO DAS FRUTAS - JACARECANGA</b><br>R$ 855,45</div>`)[0];
+                popup_fa09525f7285a5d484e625a19f1d96b1.setContent(html_85e2e60bde4616146b262e268492908b);
+            
+        
+
+        circle_marker_6ff821e63c02c46284c86953be44c2e4.bindPopup(popup_fa09525f7285a5d484e625a19f1d96b1)
+        ;
+
+        
+    
+    
+            var circle_marker_316057fa670d6920eec6dd3047bb9b3d = L.circleMarker(
+                [-3.7128686, -38.5486857],
+                {"bubblingMouseEvents": true, "color": "#341a9f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#341a9f", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_f64b835bae3224fcf273c2e9830b6695);
+        
+    
+        var popup_4e84f48dccfb7330212b91501f7c2f07 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e9cab73a930777520f8dcea9604adeeb = $(`<div id="html_e9cab73a930777520f8dcea9604adeeb" style="width: 100.0%; height: 100.0%;"><b>CANTINHO DAS FRUTAS - PIRAMBU</b><br>R$ 329,97</div>`)[0];
+                popup_4e84f48dccfb7330212b91501f7c2f07.setContent(html_e9cab73a930777520f8dcea9604adeeb);
+            
+        
+
+        circle_marker_316057fa670d6920eec6dd3047bb9b3d.bindPopup(popup_4e84f48dccfb7330212b91501f7c2f07)
+        ;
+
+        
+    
+    
+            var circle_marker_f483f477bb2a92b7ef3f5270f8d2a1ca = L.circleMarker(
+                [-3.7231516, -38.5963341],
+                {"bubblingMouseEvents": true, "color": "#341a9f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#341a9f", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_f64b835bae3224fcf273c2e9830b6695);
+        
+    
+        var popup_3467a9596a8028f5f19c8199b82fcb2d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1eee3da04c06624a42163e2c081665cd = $(`<div id="html_1eee3da04c06624a42163e2c081665cd" style="width: 100.0%; height: 100.0%;"><b>COMETA (VILA VELHA)</b><br>R$ 11.457,03</div>`)[0];
+                popup_3467a9596a8028f5f19c8199b82fcb2d.setContent(html_1eee3da04c06624a42163e2c081665cd);
+            
+        
+
+        circle_marker_f483f477bb2a92b7ef3f5270f8d2a1ca.bindPopup(popup_3467a9596a8028f5f19c8199b82fcb2d)
+        ;
+
+        
+    
+    
+            var circle_marker_33ada41b0612bb8426bafa93f329fc9e = L.circleMarker(
+                [-3.7086442, -38.563186],
+                {"bubblingMouseEvents": true, "color": "#341a9f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#341a9f", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_f64b835bae3224fcf273c2e9830b6695);
+        
+    
+        var popup_de600f5bfcd6ca45450702cc313fd4d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f82c6f79087c3188f4e4a68e787097c6 = $(`<div id="html_f82c6f79087c3188f4e4a68e787097c6" style="width: 100.0%; height: 100.0%;"><b>BARATAO - ALVARO WEYNE</b><br>R$ 1.102,27</div>`)[0];
+                popup_de600f5bfcd6ca45450702cc313fd4d6.setContent(html_f82c6f79087c3188f4e4a68e787097c6);
+            
+        
+
+        circle_marker_33ada41b0612bb8426bafa93f329fc9e.bindPopup(popup_de600f5bfcd6ca45450702cc313fd4d6)
+        ;
+
+        
+    
+    
+            var poly_line_168b3e3dcb2ae34ed5e9b779e4fdca29 = L.polyline(
+                [[-3.7572537, -38.5854697], [-3.7231516, -38.5963341], [-3.706231, -38.5746142], [-3.7086442, -38.563186], [-3.7128686, -38.5486857]],
+                {"bubblingMouseEvents": true, "color": "#341a9f", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#341a9f", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_sub_group_f64b835bae3224fcf273c2e9830b6695);
+        
+    
+            poly_line_168b3e3dcb2ae34ed5e9b779e4fdca29.bindTooltip(
+                `<div>
+                     Rota de EDSON
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_sub_group_f64b835bae3224fcf273c2e9830b6695.addTo(map_17f49da0c2211a98adacf1a6f6a10b51);
+        
+    
+            var feature_group_sub_group_a953215a88b5096eb8b2d959115d7888 = L.featureGroup.subGroup(
+                feature_group_260c75e7c23527339d7b6d80fcdddb7f
+            );
+        
+    
+            var circle_marker_f1c7ad2cf1b05a5f0a2796d30a9210a6 = L.circleMarker(
+                [-3.7930876, -38.5335303],
+                {"bubblingMouseEvents": true, "color": "#4c5ea9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4c5ea9", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_a953215a88b5096eb8b2d959115d7888);
+        
+    
+        var popup_3e9d0c99e63d3a6fe190dd187170ef92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dbd9b92f9866717d02848c6745c0cfdb = $(`<div id="html_dbd9b92f9866717d02848c6745c0cfdb" style="width: 100.0%; height: 100.0%;"><b>SUPER DO POVO - CD</b><br>R$ 7.569,44</div>`)[0];
+                popup_3e9d0c99e63d3a6fe190dd187170ef92.setContent(html_dbd9b92f9866717d02848c6745c0cfdb);
+            
+        
+
+        circle_marker_f1c7ad2cf1b05a5f0a2796d30a9210a6.bindPopup(popup_3e9d0c99e63d3a6fe190dd187170ef92)
+        ;
+
+        
+    
+    
+            var poly_line_1bef39825105d60c4fd048a5913e25b2 = L.polyline(
+                [[-3.7572537, -38.5854697], [-3.7930876, -38.5335303]],
+                {"bubblingMouseEvents": true, "color": "#4c5ea9", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4c5ea9", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_sub_group_a953215a88b5096eb8b2d959115d7888);
+        
+    
+            poly_line_1bef39825105d60c4fd048a5913e25b2.bindTooltip(
+                `<div>
+                     Rota de FELIX - SUPER DO POVO 1ª ROTA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_sub_group_a953215a88b5096eb8b2d959115d7888.addTo(map_17f49da0c2211a98adacf1a6f6a10b51);
+        
+    
+            var feature_group_sub_group_711819e992b85d4f65039bdf3ba31d24 = L.featureGroup.subGroup(
+                feature_group_260c75e7c23527339d7b6d80fcdddb7f
+            );
+        
+    
+            feature_group_sub_group_711819e992b85d4f65039bdf3ba31d24.addTo(map_17f49da0c2211a98adacf1a6f6a10b51);
+        
+    
+            var feature_group_sub_group_869c13b35bc905b653a07233c1c4e5a5 = L.featureGroup.subGroup(
+                feature_group_260c75e7c23527339d7b6d80fcdddb7f
+            );
+        
+    
+            var circle_marker_38751f1cbf814e515e30c6786b47bb9b = L.circleMarker(
+                [-3.96526816, -38.51777873],
+                {"bubblingMouseEvents": true, "color": "#9d92a1", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9d92a1", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_869c13b35bc905b653a07233c1c4e5a5);
+        
+    
+        var popup_37217c274ee0ef101e605e8356ed2c3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc15fb70053d92547bbf6ad0c6504e03 = $(`<div id="html_fc15fb70053d92547bbf6ad0c6504e03" style="width: 100.0%; height: 100.0%;"><b>REDE UNIFORCA - CD</b><br>R$ 30.576,00</div>`)[0];
+                popup_37217c274ee0ef101e605e8356ed2c3e.setContent(html_fc15fb70053d92547bbf6ad0c6504e03);
+            
+        
+
+        circle_marker_38751f1cbf814e515e30c6786b47bb9b.bindPopup(popup_37217c274ee0ef101e605e8356ed2c3e)
+        ;
+
+        
+    
+    
+            var poly_line_9cd92f1b2aebf169014b6a4de9685c7a = L.polyline(
+                [[-3.7572537, -38.5854697], [-3.96526816, -38.51777873]],
+                {"bubblingMouseEvents": true, "color": "#9d92a1", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#9d92a1", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_sub_group_869c13b35bc905b653a07233c1c4e5a5);
+        
+    
+            poly_line_9cd92f1b2aebf169014b6a4de9685c7a.bindTooltip(
+                `<div>
+                     Rota de CARGA UNIFORÇA CARRO 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_sub_group_869c13b35bc905b653a07233c1c4e5a5.addTo(map_17f49da0c2211a98adacf1a6f6a10b51);
+        
+    
+            var feature_group_sub_group_d3e5d54dcce9c7a743ebdb0d203e5103 = L.featureGroup.subGroup(
+                feature_group_260c75e7c23527339d7b6d80fcdddb7f
+            );
+        
+    
+            var circle_marker_aeb280c4333eaa30579d356ab2123462 = L.circleMarker(
+                [-3.96526816, -38.51777873],
+                {"bubblingMouseEvents": true, "color": "#daba28", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#daba28", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_sub_group_d3e5d54dcce9c7a743ebdb0d203e5103);
+        
+    
+        var popup_13bed86bf83814e5546c9ec5ffedc1f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51d9012762c0b738a5fa72dcbd264f21 = $(`<div id="html_51d9012762c0b738a5fa72dcbd264f21" style="width: 100.0%; height: 100.0%;"><b>REDE UNIFORCA - CD</b><br>R$ 78.624,00</div>`)[0];
+                popup_13bed86bf83814e5546c9ec5ffedc1f0.setContent(html_51d9012762c0b738a5fa72dcbd264f21);
+            
+        
+
+        circle_marker_aeb280c4333eaa30579d356ab2123462.bindPopup(popup_13bed86bf83814e5546c9ec5ffedc1f0)
+        ;
+
+        
+    
+    
+            var poly_line_14f932bb15c41de5bd0108a117dc9fac = L.polyline(
+                [[-3.7572537, -38.5854697], [-3.96526816, -38.51777873]],
+                {"bubblingMouseEvents": true, "color": "#daba28", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#daba28", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_sub_group_d3e5d54dcce9c7a743ebdb0d203e5103);
+        
+    
+            poly_line_14f932bb15c41de5bd0108a117dc9fac.bindTooltip(
+                `<div>
+                     Rota de CARGA UNIFORÇA CARRO 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_sub_group_d3e5d54dcce9c7a743ebdb0d203e5103.addTo(map_17f49da0c2211a98adacf1a6f6a10b51);
+        
+    
+            var layer_control_a2a4f4a50fd74d4335eebefefa42cad3_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_5e426c0783a5fcd1099d03e2a09c5045,
+                },
+                overlays :  {
+                    "Todos os Pontos" : feature_group_260c75e7c23527339d7b6d80fcdddb7f,
+                    "VALEMILK" : feature_group_sub_group_3d6ddfe412fe5926980c09c74db1b86a,
+                    "AILTON" : feature_group_sub_group_e5eeccfc6b67f301f9c4e7747ba22686,
+                    "LUAN" : feature_group_sub_group_e790bfb094f3cb8c89ce00a0f6b96d33,
+                    "FELIX -2\u00aa ROTA" : feature_group_sub_group_7f6ffd691ec07121dbb59cf806fa54a7,
+                    "ROBERTO" : feature_group_sub_group_43272d0643eecdd541aad711ec59cc9d,
+                    "EDSON" : feature_group_sub_group_f64b835bae3224fcf273c2e9830b6695,
+                    "FELIX - SUPER DO POVO 1\u00aa ROTA" : feature_group_sub_group_a953215a88b5096eb8b2d959115d7888,
+                    NaN : feature_group_sub_group_711819e992b85d4f65039bdf3ba31d24,
+                    "CARGA UNIFOR\u00c7A CARRO 2" : feature_group_sub_group_869c13b35bc905b653a07233c1c4e5a5,
+                    "CARGA UNIFOR\u00c7A CARRO 1" : feature_group_sub_group_d3e5d54dcce9c7a743ebdb0d203e5103,
+                },
+            };
+            let layer_control_a2a4f4a50fd74d4335eebefefa42cad3 = L.control.layers(
+                layer_control_a2a4f4a50fd74d4335eebefefa42cad3_layers.base_layers,
+                layer_control_a2a4f4a50fd74d4335eebefefa42cad3_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_17f49da0c2211a98adacf1a6f6a10b51);
+
+        
+</script>
+</html>
